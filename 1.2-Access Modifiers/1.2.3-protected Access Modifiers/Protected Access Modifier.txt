@@ -1,0 +1,10 @@
+package accessmodifiers1;
+
+import com.simplilearn.accessmodifiers.D;
+
+public class ProtectedModifier extends D{
+
+	void test() {
+		System.out.println(a);
+	}
+}
