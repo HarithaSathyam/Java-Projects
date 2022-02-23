@@ -1,0 +1,25 @@
+class A {
+	int i;
+	int j;
+	
+	
+
+	A(int i, int j) {
+		this.i = i;
+		this.j = j;
+	
+	}
+	void display() {
+		System.out.println(i+j);
+	}
+		
+	}
+public class Constructor {
+	public static void main(String[] args) {
+		
+		
+		A a = new A(2,3);
+		A b = new A(17,32);
+		a.display();
+		b.display();
+}
