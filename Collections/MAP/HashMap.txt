@@ -1,0 +1,27 @@
+package map;
+import java.util.HashMap;
+import java.util.Set;
+import java.util.Collection;
+
+public class HashMapExample {
+
+	public static void main(String[] args) {
+		HashMap<Integer,String> List=new HashMap<>();
+		List.put(1,"Red");
+		List.put(2, "Blue");
+		List.put(3, "Pink");
+		List.put(4, "Black");
+		List.put(null, "Orange");
+		
+		Set<Integer> keys = List.keySet();
+		for(Integer d: keys) {
+			System.out.println(d);
+		}
+		Collection<String> values = List.values();
+		for(String N: values) {
+			System.out.println(N);
+		}
+		
+	}
+
+}

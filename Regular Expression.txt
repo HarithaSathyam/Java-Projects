@@ -1,0 +1,24 @@
+
+import java.util.*;
+import java.util.regex.*;
+public class RegularExpression {
+
+	public static void main(String[] args) {
+		ArrayList<String> names=new ArrayList<>();	
+		names.add("Anith3");
+		names.add("Haritha@123");
+		names.add("Indhumathi@34");
+		names.add("1aravindha");
+		String regex= "^[a-zA-Z]+@(.+)$";
+		Pattern P=Pattern.compile(regex);
+		System.out.println("Validation of Username\n");
+		
+		for(String name:names) {
+			
+			Matcher matcher = P.matcher(name);
+				System.out.println(name+":"+matcher.matches()+"\n");
+		}
+
+	}
+
+}

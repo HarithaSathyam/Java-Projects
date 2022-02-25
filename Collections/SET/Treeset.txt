@@ -1,0 +1,20 @@
+package collections;
+import java.util.TreeSet;
+
+public class TreeSetExample {
+
+	public static void main(String[] args) {
+		TreeSet<String> Names=new TreeSet<>();
+		Names.add("Bavana");
+		Names.add("Ramya");
+		Names.add("Sahithi");
+		Names.add("Swathi");
+		for(String N:Names) {
+			System.out.println(N);
+			
+		}
+		
+
+	}
+
+}

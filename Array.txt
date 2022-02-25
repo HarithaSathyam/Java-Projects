@@ -1,0 +1,36 @@
+public class ArrayExample {
+
+	public static void main(String[] args) {
+		//create an array
+		int[] age = {56,54,22,19};
+		//access each array elements
+		System.out.println("Age of Family members is:");
+		System.out.println("father's age:"+ age[0]);
+		System.out.println("mother's age:"+ age[1]);
+		System.out.println("daughter's age:"+ age[2]);
+		System.out.println("son's age:"+ age[3]);
+		for(int a:age)
+		{	
+			if(a>50) {
+				System.out.println("Family member is a parent");
+				if(a>54) {
+					System.out.println("He is a Father");
+				}
+				else {
+					System.out.println("she is a Mother");
+				}
+			}
+			else  {
+				System.out.println("Family member is a child");
+				if(a>20) {
+					System.out.println("she is a Daughter");
+				}
+			
+			   else {
+				System.out.println("he is a Son");
+			}
+		}
+	
+		}	
+	}
+}

@@ -1,0 +1,30 @@
+package collections;
+import java.util.PriorityQueue;
+
+public class PriorityQueueExample {
+
+	public static void main(String[] args) {
+ PriorityQueue<String> data = new PriorityQueue<>();
+		
+		data.add("Sathya");
+		data.add("Geetha Vani");
+		data.add("Haritha");
+		data.add("Manish");
+		for (String P:data) {
+			System.out.println(P);
+		}
+		       //element() --> Return head element and not remove.This throws exception if queue is empty.<br/>
+				System.out.println(data.element());
+				// peek() --> Return head element and not remove. Return null if queue is empty.<br>
+				
+				System.out.println(data.peek());
+				//poll() --> Return head element and remove. Return null if queue is empty<br/>
+				System.out.println(data.poll());
+				//remove() --> Return head element and remove. Throws exception if queue is empty<br
+				System.out.println(data.remove());
+				
+				
+
+	}
+
+}

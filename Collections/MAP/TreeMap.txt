@@ -1,0 +1,27 @@
+package map;
+import java.util.TreeMap;
+import java.util.Set;
+import java.util.Collection;
+
+
+public class TreeMapExample {
+
+	public static void main(String[] args) {
+		TreeMap<Integer,String> Lap=new TreeMap<>();
+		Lap.put(1,"Dell");
+		Lap.put(2, "HP");
+		Lap.put(3, "lenova");
+		Set<Integer> No=Lap.keySet();
+		for(Integer N : No) {
+			System.out.println(N);
+			
+			
+		}
+		Collection<String> Laptop=Lap.values();
+		for(String L:Laptop) {
+			System.out.println(L);
+		}
+
+	}
+
+}

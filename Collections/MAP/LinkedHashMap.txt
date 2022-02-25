@@ -1,0 +1,24 @@
+package map;
+import java.util.LinkedHashMap;
+import java.util.Set;
+import java.util.Collection;
+
+public class LinkedHashMapExample {
+
+	public static void main(String[] args) {
+		LinkedHashMap<String,String> Sports=new LinkedHashMap<>();
+		Sports.put("First","Cricket");
+		Sports.put("Second","Kabbadi");
+		Sports.put("Third","Running");
+		Set<String> S = Sports.keySet();
+		 for(String key : S) {
+				System.out.println(key);
+			}
+
+         Collection<String> C = Sports.values();
+         for(String Sport : C) {
+        	 System.out.println(Sport);
+         }
+	}
+
+}

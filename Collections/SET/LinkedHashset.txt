@@ -1,0 +1,18 @@
+package collections;
+import java.util.LinkedHashSet;
+
+public class LinkedHashSetExample {
+
+	public static void main(String[] args) {
+		LinkedHashSet<String> list=new LinkedHashSet<>();
+		list.add("Priyanka");
+		list.add("Lahari");
+		list.add("Chathura");
+		list.add("Lavanya");
+		for(String l:list) {
+			System.out.println(l);
+		}
+		
+	}
+
+}
