@@ -1,0 +1,48 @@
+package multithread;
+class Project{
+	int Time=24;
+	synchronized void submition(int Time) throws InterruptedException {
+		if(this.Time < Time) {
+			System.out.println("Time left \nplease contact your manager to extend time");
+			this.wait();
+		}
+		
+			
+		
+	}
+		synchronized void deadlineextend(int Time) {
+			this.Time+=Time;
+			System.out.println("Deadline for project submition has been extended");
+			this.notify();
+			
+		}
+	}
+
+
+public class WaitExample {
+
+	public static void main(String[] args) {
+		Project P=new Project();
+
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					P.submition(26);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}).start();
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+					P.deadlineextend(5);
+			}
+		}).start();
+		
+
+	}
+
+}
