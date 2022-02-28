@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StringSearch {
+
+	public static void main(String[] args) {
+		
+		Scanner Inp=new Scanner(System.in);
+		System.out.println("Enter the name you want to search:");
+		String S=Inp.nextLine();
+		ArrayList<String> A=new ArrayList<String>();
+		A.add("Hari");
+		A.add("Sathya");
+		A.add("Geetha");
+		A.add("Manish");
+		
+	      for (String E : A){
+	    	  
+	         if (E.contains(S)){
+	               System.out.println("The name you entered is found"+ ":"+ E);
+	         }
+	        	 
+	        
+	      }
+
+	}
+
+}
