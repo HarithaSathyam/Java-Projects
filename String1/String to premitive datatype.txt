@@ -1,0 +1,21 @@
+package typecasting;
+
+public class StringToPrimitive {
+
+	public static void main(String[] args) {
+		System.out.println("Converting String to another Primitive data type\n");
+		String s="1234";
+		String r="Character";
+		
+			Integer I=Integer.valueOf(s);
+			System.out.println("1-Sting to Integer\n");
+			System.out.println(I+"\n");
+			System.out.println("Sting to Character\n");
+			for(int i=0;i<r.length();i++) {
+				char C=r.charAt(i);
+				System.out.println(C);
+
+	}
+
+}
+}

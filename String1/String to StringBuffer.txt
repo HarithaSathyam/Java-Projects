@@ -1,0 +1,34 @@
+public class StringToStringBuffer {
+
+	public static void main(String[] args) {
+		// String - 1
+        String S = "Hi Everyone ";
+ 
+        // create StringBuffer object
+        StringBuffer B = new StringBuffer();
+ 
+        // 1. convert String to StringBuffer
+        // using append() method
+        B.append(S);
+ 
+        // String - 2
+        String S2 = "Iam J.Haritha\n";
+ 
+        // 2. again, convert String-2 to StringBuffer
+        // using append() method
+        B.append(S2);
+ 
+        // String - 3
+        String S3 = " Iam from Guntakal";
+ 
+        // 3. third time, convert String-3 and
+        // add newline '\n' using + operator
+        B.append("\n" + S3);
+ 
+        // print to console
+        System.out.println(" String to StringBuffer"
+                + " using append() method : \n\n" + B);
+
+	}
+
+}

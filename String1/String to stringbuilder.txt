@@ -1,0 +1,15 @@
+public class StroingToStringBuilder {
+	public static void main(String args[]) {
+		System.out.println("String to StringBuffer");
+		String S[] = {"Sathyam", "Geetha", "Haritha", "Manish", "Lakshmi", "Babu" };
+	      StringBuilder B = new StringBuilder();
+	      B.append(S[0]);
+	      B.append(" "+S[1]);
+	      B.append(" "+S[2]);
+	      B.append(" "+S[3]);
+	      B.append(" "+S[4]);
+	      B.append(" "+S[5]);
+	      System.out.println(B.toString());
+	}
+
+}
