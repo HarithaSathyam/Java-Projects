@@ -1,0 +1,41 @@
+public class Pen {
+	String Color; 
+	String Company; 
+	int Cost; 
+	public Pen(String Color, String Company, int Cost) 
+    { 
+        
+        this.Color = Color;
+        this.Company = Company; 
+        this.Cost = Cost; 
+        
+    } 
+    public String getColor() 
+    { 
+        return Color; 
+    } 
+    public String getCompany() 
+    { 
+        return Company; 
+    } 
+    public int getCost() 
+    { 
+        return Cost; 
+    } 
+    
+    @Override
+    public String toString() 
+    { 
+        return("Details of my pen:\n"+"My pen color : "+ this.getColor()+"\n"+ "My pen company : " + this.getCompany()+"\n" +"My pen cost : "+ this.getCost()); 
+    } 
+
+	public static void main(String[] args) {
+		
+	    
+	        Pen P= new Pen("Blue","Elkos", 5 ); 
+	        System.out.println(P.toString()); 
+
+
+	}
+
+}
