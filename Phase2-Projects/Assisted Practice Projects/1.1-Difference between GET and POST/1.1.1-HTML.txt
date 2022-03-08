@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<a href="Httpservletexample?name=Hari">Click here to open Get Request</a>
+<br>
+<br>
+<form Postrequest="Handler" method="post"action="Httpservletexample">
+Name :<input type="text"id="name"name="name">
+<button>Submit</button>
+</form>
+
+</body>
+</html>

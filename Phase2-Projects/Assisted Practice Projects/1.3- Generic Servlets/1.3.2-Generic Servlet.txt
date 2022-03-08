@@ -1,0 +1,26 @@
+package servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+
+import javax.servlet.GenericServlet;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import javax.servlet.annotation.WebServlet;
+ 
+@WebServlet(name="GenericServletExample", urlPatterns={"/genericServlet"})
+public class GenericServletExample extends GenericServlet {
+
+	@Override
+	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
+		PrintWriter P= res.getWriter();
+		P.println("<html><body>");
+		P.println("Example for Generic servlet");
+		P.println("<br/>"+new Date());
+		P.println("<body><html>");
+
+	}
+
+}

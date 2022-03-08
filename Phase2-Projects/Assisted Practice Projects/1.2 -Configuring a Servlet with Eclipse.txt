@@ -1,0 +1,25 @@
+step:1
+    create dynamic web project
+    
+Step:2
+    Configure --> Convert to maven project
+    
+Step 3: 
+    Create servlet,
+    Configure mapping
+    
+Step 4: Configure Tomcat
+        - Download tomcat (if not done so, Tomcat8)
+        - Unzip tomcat 
+        - Configure Tomcat in eclipse (if not done so)
+        - Select application, 
+                Run as     --> Select Tomcat 8.0 
+                        --> Select Tomcat (unzipped directory downloeded earlier)
+                        finish
+        - If needed change port of your tomcat 
+            - In your eclipse, Servers project should have created, once you configure tomcat in eclipse
+            - Open Servers/server.xml fle
+                - search for 8080 -> change it to 8081
+                - server for 8005 -> change it to 8006
+                - search for 8009 -> change it to 8010
+    
