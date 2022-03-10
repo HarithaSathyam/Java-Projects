@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Servletfilter Example</title>
+</head>
+<body>
+<a href="dashboard?userId=johndoe"> Account Dashboard </a><br/>
+	
+	<a href="profile?userId=johndoe"> Account Profile </a><br/>
+	
+	<a href="dashboard"> Account Dashboard (block request)</a><br/>
+	
+	<a href="info"> Info page</a>
+
+</body>
+</html>
