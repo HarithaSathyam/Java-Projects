@@ -1,0 +1,27 @@
+package com.phase3.controller;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.phase3.dao.ProductDAO;
+import com.phase3.model.EProduct;
+
+
+@Controller
+public class EproductController {
+	@Autowired
+	ProductDAO productDAO;
+	
+	@GetMapping("/listProducts")
+	public String listProducts(Model model) {
+		
+		List<EProduct> products = productDAO.getProducts();
+		model.addAttribute("products", products);
+		
+		return "listProducts";
+	}
+	
+}

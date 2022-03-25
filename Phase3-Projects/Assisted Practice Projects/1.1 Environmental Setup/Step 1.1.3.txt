@@ -1,0 +1,4 @@
+Building the project
+●	From the Project menu at the top, click on Build
+●	If any compile errors are shown, fix them as required
+

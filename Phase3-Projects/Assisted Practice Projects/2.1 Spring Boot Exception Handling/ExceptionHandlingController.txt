@@ -1,0 +1,23 @@
+package com.phase3.controller;
+
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ExeptionHandlingController {
+	 @ExceptionHandler(value=Exception.class)
+	 public String arithmaticHandler() {
+	 return "Internal error occurred, please contact to administrator"; }
+ public String NullPointerHandler() {
+	 return "Null pointer Exception Error Occur";
+ }
+	@GetMapping("/calculate")
+	public Integer calculate() {
+		int a = 6;
+		int b = 0;
+
+		int result = a / b;
+		return result;
+	}
+}

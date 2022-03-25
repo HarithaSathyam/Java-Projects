@@ -1,0 +1,19 @@
+package com.phase3.listners;
+
+import org.springframework.context.event.EventListener;
+import org.springframework.stereotype.Component;
+
+import com.phase3.events.NewsEvent;
+
+@Component
+public class NewsEventListners {
+	@EventListener
+	public void onNewsEvent(NewsEvent event) {
+		System.out.println("News Event object published..");
+	}
+	
+	@EventListener
+	public void onNewsEvent1(NewsEvent event) {
+		System.out.println("News Event11 object published..");
+	}
+}

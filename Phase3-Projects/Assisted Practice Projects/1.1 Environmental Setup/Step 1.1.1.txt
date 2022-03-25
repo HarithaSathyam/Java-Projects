@@ -1,0 +1,16 @@
+Creating a Maven Project which is web enabled
+●	Open Eclipse 
+●	Go to the File menu. Choose New->Maven Project
+●	Uncheck Create a Simple Project and check Use Default Workspace Location and click on Next
+●	From the archetype list, choose the row that has Artifact Id as maven-archetype-webapp and click on Next
+●	Enter Group Id as com and Artifact Id as SpringSetup and click on Finish
+●	This will create the project files in the Project Explorer
+●	Before building the project, we need to confirm that the servlet.jar has been added to the project
+●	In the Project Explorer, right click and choose Properties
+●	Select Java Build Path from the options on the left
+●	Click on Libraries tab on the right
+●	If there is an existing entry for the servlet.jar, then click on Cancel and exit the window
+●	If it is not there, then click on Classpath entry and click on Add External JARs button on the right
+●	From the file list, select servlet.jar file and click on Ok
+●	Click on Apply and Close
+
