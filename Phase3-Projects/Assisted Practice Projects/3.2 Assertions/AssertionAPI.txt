@@ -1,0 +1,33 @@
+package com.phase3;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
+
+@RunWith(JUnitPlatform.class)
+public class AssertionAPI {
+	@Test
+	 public void Assertiontest() {
+	String m=null;
+	String l="Assertion API";
+	Assertions.assertTrue(4>0);
+	Assertions.assertNull(m);
+	
+	Assertions.assertSame(l, l);
+	Assertions.assertNotSame(m, l);
+	
+	Assertions.assertEquals(3,3);
+	
+	
+	String[] a1  = {"A", "B"};
+	String[] a2 = {"C"};
+	
+	Assertions.assertEquals(a1, a1);
+	
+	
+	Assertions.assertThrows(RuntimeException.class, () -> {
+		throw new RuntimeException();
+	});
+
+}}

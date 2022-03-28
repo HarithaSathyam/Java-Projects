@@ -1,0 +1,38 @@
+package com.phase3;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.platform.runner.JUnitPlatform;
+import org.junit.runner.RunWith;
+@RunWith(JUnitPlatform.class)
+public class LifecycleAnnotations {
+@BeforeAll
+static void initall() {
+	System.out.println("Before all annotion is executed");
+	
+}
+@AfterAll
+static void afterall() {
+    System.out.println("After all annotation is executed ");	
+}
+@BeforeEach
+void BeforeEachMethod() {
+	System.out.println("Before Each annotation is executed");
+}
+@AfterEach
+void AfterEachMethod() {
+	System.out.println("After each annotation is executed");
+}
+@Test
+void Testcase1() {
+	System.out.println("Test case 1 is executed");
+	
+}
+@Test
+void Testcase2() {
+	System.out.println("Test case 2 is executed");
+}
+}
