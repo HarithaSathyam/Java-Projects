@@ -1,0 +1,8 @@
+server.port=9095
+
+server.ssl.key-store-type=PKCS12
+server.ssl.key-store=classpath:keystore/simplilearn_mphasis1.p12
+server.ssl.key-store-password=Test@123
+server.ssl.key-alias=simplilearn_mphasis
+
+server.ssl.enabled=true
